@@ -43,7 +43,11 @@ const Home: NextPage = () => {
   return (
     <div className="p-4">
       <div className="flex justify-center">
-        <div>
+        <div className="grid gap-12">
+          <div className="mx-auto max-w-xl rounded-lg bg-white p-6 shadow-md">
+            <img src="https://www.polygonag.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpolygonplus.5a2b1457.png&w=1920&q=75"></img>
+          </div>
+
           <Webcam
             ref={webcamRef}
             screenshotFormat="image/jpeg"
@@ -56,14 +60,14 @@ const Home: NextPage = () => {
               className="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
               onClick={handleIndexFace}
             >
-              Index Face
+              Capturar Rostro
             </button>
             <div className="mr-2 inline" />
             <button
               className="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
               onClick={handleSearchFace}
             >
-              Search Face
+              Buscar Similitudes
             </button>
           </div>
         </div>
